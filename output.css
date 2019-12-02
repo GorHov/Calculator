@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body .app {
+  height: 100vh;
+  width: 100%;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .app .calc {
+  height: 400px;
+  width: 340px;
+}
+body .app .calc .section1 {
+  height: 30%;
+  width: 100%;
+  background-color: black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+body .app .calc .section2 {
+  height: 70%;
+  width: 100%;
+  background-color: #303030;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body .app .calc .section2 .column {
+  display: flex;
+  height: 25%;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body .app .calc .section2 .column span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EBEBEB;
+  font-size: 25px;
+}
+body .app .calc .section2 .column .part {
+  justify-content: space-between;
+  height: 100%;
+  width: 25%;
+  background-color: #303030;
+}
+body .app .calc .section2 .column #part-right {
+  border-bottom-right-radius: 10px;
+  background-color: #FD6300;
+}
+body .app .calc .section2 .column #part-left {
+  border-bottom-left-radius: 10px;
+}
+body .app .calc .section2 .column #part-left span {
+  font-size: 15px;
+  color: #6D6D6D;
+}
+body .app .calc .section2 .column #multipl, body .app .calc .section2 .column #minus, body .app .calc .section2 .column #plus {
+  background-color: #FFFFFF;
+}
+body .app .calc .section2 .column #multipl span, body .app .calc .section2 .column #minus span, body .app .calc .section2 .column #plus span {
+  color: #2E3B4C;
+}
+
+/*# sourceMappingURL=output.css.map */
