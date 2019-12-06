@@ -14,6 +14,18 @@ body .app .calc {
   height: 400px;
   width: 340px;
 }
+@media screen and (max-width: 600px) {
+  body .app .calc {
+    height: 300px;
+    width: 240px;
+  }
+}
+@media screen and (max-height: 410px) {
+  body .app .calc {
+    height: 270px;
+    width: 440px;
+  }
+}
 body .app .calc .section1 {
   height: 30%;
   width: 100%;
@@ -44,27 +56,42 @@ body .app .calc .section2 .column span {
   color: #EBEBEB;
   font-size: 25px;
 }
+@media screen and (max-width: 600px) {
+  body .app .calc .section2 .column span {
+    font-size: 20px;
+  }
+}
 body .app .calc .section2 .column .part {
   justify-content: space-between;
   height: 100%;
   width: 25%;
   background-color: #303030;
+  user-select: none;
+  cursor: pointer;
 }
-body .app .calc .section2 .column #part-right {
+body .app .calc .section2 .column .part:hover {
+  background-color: #535353;
+}
+body .app .calc .section2 .column .part-right {
   border-bottom-right-radius: 10px;
   background-color: #FD6300;
 }
-body .app .calc .section2 .column #part-left {
+body .app .calc .section2 .column .part-left {
   border-bottom-left-radius: 10px;
 }
-body .app .calc .section2 .column #part-left span {
+body .app .calc .section2 .column .part-left span {
   font-size: 15px;
   color: #6D6D6D;
 }
-body .app .calc .section2 .column #multipl, body .app .calc .section2 .column #minus, body .app .calc .section2 .column #plus {
+@media screen and (max-width: 600px) {
+  body .app .calc .section2 .column .part-left span {
+    font-size: 12px;
+  }
+}
+body .app .calc .section2 .column .multipl, body .app .calc .section2 .column .minus, body .app .calc .section2 .column .plus {
   background-color: #FFFFFF;
 }
-body .app .calc .section2 .column #multipl span, body .app .calc .section2 .column #minus span, body .app .calc .section2 .column #plus span {
+body .app .calc .section2 .column .multipl span, body .app .calc .section2 .column .minus span, body .app .calc .section2 .column .plus span {
   color: #2E3B4C;
 }
 

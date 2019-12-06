@@ -11,6 +11,15 @@ body{
         .calc{
             height: 400px;
             width: 340px;
+
+            @media screen and(max-width: 600px) {
+                height: 300px;
+                width: 240px;
+            }
+            @media screen and(max-height: 410px) {
+                height: 270px;
+                width: 440px;
+            }
             .section1{
                 height:30%;
                 width:100%;
@@ -38,25 +47,38 @@ body{
                         align-items: center;
                         color: #EBEBEB;
                         font-size: 25px;
+
+                        @media screen and(max-width: 600px) {
+                            font-size: 20px;
+                        }
                     } 
                     .part{
                         justify-content: space-between;
                         height: 100%;
                         width: 25%;
                         background-color: #303030;
+                        user-select: none;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #535353;
+                        }
                     }
-                    #part-right{
+                    .part-right{
                         border-bottom-right-radius: 10px; 
                         background-color: #FD6300;
                     }
-                    #part-left{
+                    .part-left{
                         border-bottom-left-radius: 10px;
                         span{
                             font-size: 15px;
                             color: #6D6D6D;
+
+                            @media screen and(max-width: 600px) {
+                                font-size: 12px;
+                            }
                         }
                     }
-                    #multipl,#minus,#plus{
+                    .multipl,.minus,.plus{
                         background-color: #FFFFFF;
                         span{
                            color: #2E3B4C;
